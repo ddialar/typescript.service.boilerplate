@@ -1,6 +1,6 @@
 # Plantilla para servicio en TypeScript
 
-<img src="https://img.shields.io/badge/Version-0.0.1-yellow" /> <img src="https://img.shields.io/badge/TypeScript-3.9.6-blue" /> <img src="https://img.shields.io/badge/Webpack-4.43.0-blue" /> <img src="https://img.shields.io/badge/Jest-26.1.0-green" /> <img src="https://img.shields.io/badge/openApi-3.0.1-green" />
+<img src="https://img.shields.io/badge/Version-0.1.0-yellow" /> <img src="https://img.shields.io/badge/TypeScript-3.9.6-blue" /> <img src="https://img.shields.io/badge/Webpack-4.43.0-blue" /> <img src="https://img.shields.io/badge/Jest-26.1.0-green" /> <img src="https://img.shields.io/badge/openApi-3.0.1-green" />
 
 ## Índice
 
