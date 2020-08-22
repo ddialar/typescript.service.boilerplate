@@ -1,0 +1,38 @@
+{
+    "globals": {
+        "ts-jest": {
+            "tsConfig": "tsconfig.json",
+            "autoMapModuleNames": true,
+            "diagnostics": false
+        }
+    },
+    "testEnvironment": "node",
+    "testPathIgnorePatterns": [
+        "<rootDir>/node_modules/*",
+        "<rootDir>/docs/*",
+        "<rootDir>/dist/*"
+    ],
+    "modulePaths": [
+        "src"
+    ],
+    "moduleFileExtensions": [
+        "ts",
+        "js"
+    ],
+    "moduleNameMapper": {
+        "^@package$": "<rootDir>/package.json",
+        "^@manifest$": "<rootDir>/manifest.json",
+        "^@core(.*)$": "<rootDir>/src/core$1",
+        "^@ports(.*)$": "<rootDir>/src/ports$1",
+        "^@adapters(.*)$": "<rootDir>/src/adapters$1",
+        "^@apiDocumentation(.*)$": "<rootDir>/src/adapters/transportLayer/apiDocumentation$1",
+        "^@utils(.*)$": "<rootDir>/src/utils$1"
+    },
+    "verbose": false,
+    "testURL": "http://localhost",
+    "testRegex": "^.*\\.(test|spec)\\.ts$",
+    "transform": {
+        "^.+\\.(js|ts)$": "ts-jest"
+    },
+    "globalSetup": "<rootDir>/dotenv/dotenv-test.js"
+}

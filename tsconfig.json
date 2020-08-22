@@ -1,0 +1,48 @@
+{
+    "compilerOptions": {
+        "module": "commonjs",
+        "esModuleInterop": true,
+        "allowJs": true,
+        "allowSyntheticDefaultImports": true,
+        "target": "es6",
+        "noImplicitAny": true,
+        "moduleResolution": "node",
+        "sourceMap": true,
+        "outDir": "dist",
+        "baseUrl": ".",
+        "paths": {
+            "@package": [
+                "package.json"
+            ],
+            "@manifest": [
+                "manifest.json"
+            ],
+            "@core": [
+                "src/core"
+            ],
+            "@ports": [
+                "src/ports"
+            ],
+            "@adapters": [
+                "src/adapters"
+            ],
+            "@apiDocumentation": [
+                "src/adapters/transportLayer/apiDocumentation"
+            ],
+            "@utils": [
+                "src/utils"
+            ]
+        },
+        "typeRoots": [
+            "./node_modules/@types"
+        ],
+        "resolveJsonModule": true
+    },
+    "include": [
+        "src/**/*",
+        "types"
+    ],
+    "exclude": [
+        "node_modules"
+    ]
+}

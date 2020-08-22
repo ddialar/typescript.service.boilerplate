@@ -1,0 +1,15 @@
+export const commonComponents = {
+    Error: {
+        type: 'object',
+        required: ['code', 'message'],
+        properties: {
+            code: {
+                type: 'integer',
+                format: 'int32',
+            },
+            message: {
+                type: 'string',
+            },
+        },
+    },
+};
