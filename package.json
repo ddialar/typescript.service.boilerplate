@@ -19,13 +19,14 @@
         "build:dev": "webpack --config ./webpack/webpack.dev.js",
         "build:pro": "npm run manifest && webpack --config ./webpack/webpack.prod.js",
         "test": "npm run test:clearCache; jest --runInBand --watch",
+        "test:noWatch": "npm run test:clearCache; jest --runInBand",
         "test:clearCache": "jest --clearCache",
         "manifest": "node_modules/make-manifest/bin/make-manifest"
     },
     "husky": {
         "hooks": {
             "pre-commit": "pretty-quick --staged",
-            "pre-push": "npm run test"
+            "pre-push": "npm run test:noWatch"
         }
     },
     "devDependencies": {
