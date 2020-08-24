@@ -7,7 +7,7 @@ import { logger } from '@utils';
 import { serve as swaggerServe, setup as swaggerSetup } from 'swagger-ui-express';
 import { swaggerDocument } from '@apiDocumentation';
 
-const { APIDOC_URI } = process.env;
+const { APIDOC_ROUTE } = process.env;
 
 const runServer = (port: number = 4000): Server => {
     const app = express();
@@ -15,7 +15,7 @@ const runServer = (port: number = 4000): Server => {
     app.use(bodyParser.urlencoded({ extended: true }));
     app.use(bodyParser.json());
 
-    app.use(APIDOC_URI, swaggerServe, swaggerSetup(swaggerDocument));
+    app.use(APIDOC_ROUTE, swaggerServe, swaggerSetup(swaggerDocument));
 
     app.use(manifestRoutes);
 

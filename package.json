@@ -46,8 +46,8 @@
         "eslint-config-airbnb-base": "^14.0.0",
         "eslint-config-airbnb-typescript": "^9.0.0",
         "eslint-plugin-import": "^2.22.0",
-        "http-status-codes": "^1.4.0",
         "husky": "^4.2.5",
+        "hygen": "^6.0.4",
         "jest": "^26.4.1",
         "make-manifest": "^1.0.1",
         "nodemon-webpack-plugin": "^4.3.2",
@@ -67,6 +67,7 @@
         "bunyan": "^1.8.14",
         "debug": "^4.1.1",
         "express": "^4.17.1",
+        "http-status-codes": "^1.4.0",
         "swagger-ui-express": "^4.1.4"
     }
 }
